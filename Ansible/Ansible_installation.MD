@@ -34,6 +34,8 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    ```sh 
    ssh-keygen
    ```
+   Log in as root Edit ssh_config: sudo vim /etc/ssh/sshd_config Change this line: PasswordAuthentication no to PasswordAuthentication yes Restart daemon: sudo systemctl restart sshd (on Control node and Managed host)
+   
 1. Copy keys onto all ansible managed hosts (on Control node)
    ```sh 
    ssh-copy-id ansadmin@<target-server>
