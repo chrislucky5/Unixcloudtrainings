@@ -50,7 +50,6 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    
    # start docker services 
    service docker start
-   service docker start 
    
    # add user to docker group 
    usermod -aG docker ansadmin
