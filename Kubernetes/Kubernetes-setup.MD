@@ -55,7 +55,7 @@
 
 1. Create kubernetes cluster definitions on S3 bucket
    ```sh
-   kops create cluster --cloud=aws --zones=us-east-2a --name=devops.k8s.uct1.in --dns-zone=uct1.in --dns private
+   kops create cluster --cloud=aws --zones=us-east-2a --name=devops1.k8s.uct1.in --dns-zone=uct1.in --ssh-public-key=~/.ssh/id_rsa.pub --dns-zone=uct1.in --dns private
     ```
 1. Suggestions from kops(optional):
  * list clusters with: kops get cluster
