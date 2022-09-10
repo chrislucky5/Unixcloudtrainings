@@ -63,12 +63,12 @@
  * edit your node instance group: kops edit ig --name=devops1.k8s.uct1.in nodes-us-east-2a
  * edit your master instance group: kops edit ig --name=devops1.k8s.uct1.in master-us-east-2a
 
-1. Create kubernetes cluser
+1. Create kubernetes cluser (Your cluster will be ready between 5 - 10 minutes)
     ```sh
     kops update cluster devops1.k8s.uct1.in --yes
     ```
 
-1. Validate your cluster (Your cluster will be ready between 5 - 10 minutes)
+1. Validate your cluster 
      ```sh
       kops validate cluster
     ```
