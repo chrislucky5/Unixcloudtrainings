@@ -70,7 +70,7 @@
 
 1. Validate your cluster 
      ```sh
-      kops validate cluster
+      kops validate cluster # kops validate cluster --state=s3://devops1.k8s.uct1.in
     ```
 
 1. To list nodes
