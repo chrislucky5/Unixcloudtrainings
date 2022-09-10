@@ -17,3 +17,7 @@
   - name: remove docker images form ansible server
     command: docker rmi simple-devops-image:latest ngostal/simple-devops-image
     ignore_errors: yes
+
+#Create create-simple-devops-image.yml (war-image) under /opt/k8s-lab/"file-name"
+#Which means /k8s-lab/ directory should be created before creating create-simple-devops-image.yml (war-image) "file"
+#sudo chown -R ubuntu:ubuntu k8s-lab/ #to change de owner of /k8s-lab/ directory in case we have root as owner
